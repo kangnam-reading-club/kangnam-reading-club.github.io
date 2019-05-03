@@ -74,3 +74,14 @@ Unless required by applicable law or agreed to in writing, software distributed 
 ### caution
 Kakao fonts(/assets/fonts/) and image(/assets/image/) are only avaiable for Kakao brands.
 > 카카오 폰트(/assets/fonts/)와 이미지(/assets/image/)는 카카오 브랜드용으로 다른 용도로는 이용할 수 없습니다.
+
+
+
+### 용어 정리 관련
+
+가끔 단어가 _기울기_ 로 쳐져있는 단어들은 프로그래밍 용어 정리에 올려둘 예정이다. 광범위한 분야에서 적용되는 분야는 프로그래밍 백과사전에 정리할 예정. Ruby(Rails) 포함의 용어 정리는 Ruby 백과 내역에 차츰 올릴 예정
+
+### TODO
+
+- 코드스니펫 vscode 처럼 바꾸기
+- 사진 썸네일 랜덤화
