@@ -1,4 +1,4 @@
 ---
-name: jekyll
+name: ruby
 title: programming language
 ---
