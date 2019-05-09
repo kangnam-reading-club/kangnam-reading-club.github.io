@@ -7,8 +7,8 @@ tags: [ruby, perfect ruby]
 image: /files/covers/ruby.png
 ---
 
-> 2019/05/07 ~
-> 루비 기본 문법에 대해 정리한 내용을 담고있다.
+> 2019/05/07 - 변수 / 메서드 / 조건식 / 식 정리 
+> 2019/05/09 - 클래스 
 
 
 
@@ -239,3 +239,68 @@ end
 
 루비는 어떤 값을 반환한다. `puts` 의 경우 출력값을, `변수`는 값을 반환하고,` if` 의 경우 마지막으로 평가한 값을 반환한다. 
 
+
+
+
+
+## 클래스
+
+루비는 클래스 기반 객체지향 프로그래밍이며, 모든 값은 객체로 취급된다. 
+
+##### 클래스 정의
+
+클래스는 객체의 동작을 정의한다. 모든 객체는 클래스의 인스턴스이다. 
+
+```ruby
+class ClassName
+end
+```
+
+루비에서는 클래스 명 정의시 `class` 메서드를 사용한다. 클래스명은 영문 대문자로 시작해야한다.
+
+```ruby
+# example
+class MyClass
+  def hello
+    puts 'Hello, My Object'
+  end
+end
+```
+
+##### 클래스로부터 인스턴스 생성하기
+
+```ruby
+ClassName.new
+```
+
+`new`  키워드를 통해 객체를 생성할 수 있다.
+
+```ruby
+# example
+
+my_object = Myclass.new
+my_object.hello # print "hello, My Object!"
+```
+
+##### 인스턴스 변수
+
+인스턴스 내에서만 참조할 수 있는 변수. 변수 지정시 `@` 를 사용한다. 
+
+```ruby
+# example 
+class Ruler
+  def length=(val)
+    @length = val
+  end
+    
+  def length
+    @length
+  end
+end   
+  
+ruler = Ruler.new   
+ruler.length = 30
+ruler.length # => 30
+```
+
+##### def length=(val)
