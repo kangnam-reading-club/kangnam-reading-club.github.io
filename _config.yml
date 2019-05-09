@@ -54,3 +54,7 @@ asset_url: /assets
 
 github_url:
   username: soomtopia
+
+
+  google_analytics:
+    ua: 'UA-139921519-1'
