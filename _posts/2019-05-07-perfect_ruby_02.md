@@ -292,7 +292,15 @@ class Ruler
   def length=(val)
     @length = val
   end
-    
+  
+  def name=(val)
+    @name = val
+  end
+
+  def name
+    @name
+  end
+
   def length
     @length
   end
@@ -303,4 +311,58 @@ ruler.length = 30
 ruler.length # => 30
 ```
 
-##### def length=(val)
+##### 대입 메서드 
+
+```ruby
+def method_name=
+end
+```
+
+루비에서는 setter 메서드를 만들 때, 메서드 이름 끝에 `=` 를 붙힌다. 
+위 예시에서 `length=` 메서드는 붙어있지만, `name` 메서드의 경우는 안붙어 있는데, `ruler.name = "hi"` 를 하게되면 에러가 난다.
+
+```irb
+=> class Ruler
+=>   # 대입 메서드 사용 
+=>   def length=(val); @length = val; end;
+=>   # 대입 메서드 미 사용  
+=>   # getter
+=>   def name(val); @name = val; end;
+=>   def name; @name; end;    
+=>   def length; @length; end;  
+=> end     
+
+> r = Ruler.new
+=> #<Ruler:0x00007fd2ec24ace0>
+> r.name = "h"
+NoMethodError: undefined method `name=' for #<Ruler:0x00007fd2ec24ace0>
+Did you mean?  name
+from (pry):20:in `__pry__'
+r.length = 30
+=> 30
+```
+
+대입 메서드를 사용해도 되나, 실제로 인스턴스 변수에 접근자를 만들때는 `attr_accessor` 를 이용한다. 
+
+##### attr_accessor
+
+```ruby
+class Ruler
+  attr_accessor :instance_name1, :instance_name2 
+end
+```
+이렇게 사용하면, 위에 setter,getter 를 줄여 사용할 수 있다. 
+
+##### self
+
+다른 언어에서의 `this` 메서드. 메서드 내부에서, 인스턴스를 `self` 를 통해 가져올 수 있다. 메서드 내부에서 리시버를 생략한 메서드 호출시, 암묵적으로 `self` 가 리시버가 된다. 
+
+```ruby
+class Ruler 
+  attr_accessor :length
+
+  def display_length
+    puts length
+  end
+end
+```
