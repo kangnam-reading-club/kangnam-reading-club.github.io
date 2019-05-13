@@ -1,3 +1,4 @@
+# Dollar.rb
 class Dollar
   attr_accessor :amount
 
@@ -6,6 +7,12 @@ class Dollar
   end
 
   def times(multiplier)
-    self.amount =* 2
+    Dollar.new(amount * multiplier)
   end
+
+  def equals(object)
+    amount == object.amount
+  end
+
+  private :amount
 end
