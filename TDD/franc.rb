@@ -1,14 +1,13 @@
 require './money'
-# Dollar.rb
-class Dollar < Money
-  attr_accessor :amount
+# Franc.rb
+class Franc < Money
 
   def initialize(amount)
     @amount = amount
   end
 
   def times(multiplier)
-    Dollar.new(amount * multiplier)
+    Franc.new(amount * multiplier)
   end
 
   # def equals(object)

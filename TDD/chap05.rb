@@ -1,4 +1,5 @@
 require './dollar'
+require './franc'
 require 'test/unit'
 
 # DollarTests
@@ -7,6 +8,12 @@ class DollarTests < Test::Unit::TestCase
     five = Dollar.new(5)
     assert_equal(Dollar.new(10).amount(), five.times(2).amount())
     assert_equal(Dollar.new(15).amount(), five.times(3).amount())
+  end
+
+  def test_fran_multiplication()
+    five = Franc.new(5)
+    assert_equal(Franc.new(10).amount(), five.times(2).amount())
+    assert_equal(Franc.new(15).amount(), five.times(3).amount())
   end
 
   def test_equality()
