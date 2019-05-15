@@ -1,18 +1,11 @@
 require './money'
 # Dollar.rb
 class Dollar < Money
-  attr_accessor :amount
-
-  def initialize(amount)
-    @amount = amount
+  def initialize(amount, currency)
+    super(amount, currency)
   end
 
   def times(multiplier)
-    Dollar.new(amount * multiplier)
+    Money.dollar(amount * multiplier)
   end
-
-  # def equals(object)
-  #   money = object.amount()
-  #   amount == money
-  # end
 end

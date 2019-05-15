@@ -1,17 +1,11 @@
 require './money'
 # Franc.rb
 class Franc < Money
-
-  def initialize(amount)
-    @amount = amount
+  def initialize(amount, currency)
+    super(amount, currency)
   end
 
   def times(multiplier)
-    Franc.new(amount * multiplier)
+    Money.new(amount * multiplier, currency)
   end
-
-  # def equals(object)
-  #   money = object.amount()
-  #   amount == money
-  # end
 end
