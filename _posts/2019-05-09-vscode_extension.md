@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "VSCode 추천 익스텐션 (VSCode Recommended Extensions)"
+title: "VSCode 생산성 높이기 (VSCode Recommended Extensions)"
 author: irene
 date: 2019-05-09 00:00
 tags: [vscode]
@@ -62,3 +62,17 @@ vscode 위에 캐릭터가 생성된다... 약간 집에서 해야할 것 같은
 # 6. Relative Path
 
 `cmd + shift + h` 를 눌러서 원파는 파일을 검색후 엔터치면, 자동으로 상대 경로를 만들어준다. 마크다운 이미지 넣을때 짱 유용하게 사용중. 
+
+# 7. command 창에서 자동으로 열기
+
+<https://code.visualstudio.com/docs/setup/mac>
+
+익스텐션은 아니지만, 편리해서 추가하는 팁. 터미널에서 `code .` 하면 현재 폴더에서 자동으로 vscode 가 열리게 할 수 있다. 아래 내용을 복사하해서 터미널로 붙힌 후 `code .` 를 해보자. 잘 동작하는걸 볼 수 있다.
+
+```console
+# mac osx
+cat << EOF >> ~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+```
