@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "VSCode 생산성 높이기 (VSCode Recommended Extensions)"
-author: irene
+author: soomin
 date: 2019-05-09 00:00
 tags: [vscode]
 image: /files/covers/vscode.jpg

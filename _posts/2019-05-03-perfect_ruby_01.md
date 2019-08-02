@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Perfect Ruby - 01 루비 개요"
-author: irene
+author: soomin
 date: 2019-05-03 00:00
 tags: [ruby, perfect ruby]
 image: /files/covers/ruby.png

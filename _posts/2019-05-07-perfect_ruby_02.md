@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Perfect Ruby - 02 루비 기초 - 기본 문법"
-author: irene
+author: soomin
 date: 2019-05-07 00:00
 tags: [ruby, perfect ruby]
 image: /files/covers/ruby.png

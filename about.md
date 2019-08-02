@@ -9,7 +9,7 @@ tags: [about]
 
 ## Profile
 
-- Soomin Han (Irene)
+- soomin
 - Ruby On Rails Developer
 - 매운거 못 먹음
 

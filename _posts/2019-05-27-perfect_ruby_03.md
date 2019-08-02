@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Perfect Ruby - 03 제어 구조"
-author: irene
+author: soomin
 date: 2019-05-27 00:00
 tags: [ruby, perfect ruby]
 image: /files/covers/ruby.png
@@ -193,3 +193,89 @@ end
 `===` 연산자를 통해 구혀한 것인데, case 값을 `===` 로 비교한다. 
 
 `===` 는 기본 설정에서 `==` 와 같은 동작을 하지만, 몇가지 클래스에서는 예외적으로 다른 동작을 한다. 클래스가 다른 객체를 비교할 때는 어느 쪽 리시버를 사용하느냐에 따라 결과가 달라진다.
+
+
+## while
+
+조건식이 참일 경우 안의 처리식을 반복 실행
+
+```ruby
+languages = %w(Perl Python Ruby)
+i = 0
+
+while i < languages.length
+  puts "Hello #{languages[i]}."
+  i += 1
+end
+```
+
+## until
+
+while 과 반대로 동작. 조건식이 거짓일 때 실행
+
+## 후위 while / until
+
+식 뒤에 반복문을 기술할 수 있다.
+
+```ruby
+# processing? 이 true 인 동안 1 반복 실행
+sleep 1 while proessing?
+```
+
+여러 문장을 사용하고 싶을 경우 `begin ... end` 를 사용한다. __do while__ 과 비슷하다. 조건에 상관없이 최초 1회는 무조건 동작!
+
+## for
+
+배열 / 해시는 `each` 메서드를 가지고 있다. 이런 요소들은 `for`를 사용해서 각 요소에 대한 처리가 가능하다.
+
+```ruby
+for name in %w(Alice Bob Carol)
+  puts name
+end
+
+puts name
+```
+
+__each__ 는 반복 처리를 블록으로 기술하나, `for` 에서 전달하는 식은 블록이 아니여서 for 안에서 사용한 변수는 밖에서도 참조가 가능하다. 
+
+해시를 for 로 반복 실행하면, 키와 요소로 구성되는 배열이 대입 된다. 
+
+```ruby
+for val in {a: 1, b: 2}
+  puts val[0]
+  puts "***"
+  puts val[1]
+end
+```
+
+`key`,`value` 두개의 변수를 사용하고 싶으면 다중 대입 방식으로 변수를 쉼표로 구분한다.
+
+```ruby
+for key, val in {a:1, b:2}
+  puts key
+  puts val
+end
+```
+
+다양한 반복 메서드가 존재하지만, 보통 each 를 사용하며, 무한 반복 메서드는 `loop` 를 사용한다
+
+
+```ruby
+loop do
+ puts "infinitely loop"
+end
+```
+
+n회 반복시에는 `.times` 를 사용한다.
+
+```ruby
+2.times do
+  puts 'hi'
+end
+```
+
+## __END__ 와 DATA
+
+파일 끝에 `__END__` 키워드를 사용하면 이후 작성한 프로그램은 루비 프로그램으로 실행되지 않는다.
+그 아래 써진 내용들이 있다면, DATA 라는 상수에 FILE 객체로 저장이 된다. 
+파일 실행시 참조할 수 있다.
