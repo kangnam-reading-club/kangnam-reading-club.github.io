@@ -30,9 +30,6 @@ collections:
   tags:
     output: true
     permalink: /tags/:path/
-  # books:
-  #   output: true
-  #   permalink: /books/:num/
 
 defaults:
   - scope:

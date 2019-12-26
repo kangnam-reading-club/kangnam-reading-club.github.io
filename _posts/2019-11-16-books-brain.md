@@ -2,7 +2,7 @@
 layout: post
 title: "나는 정신병에 걸린 뇌과학자 입니다."
 date: 2019-11-15 00:00
-tags: [book]
+tags: [book, 나는정신병에걸린뇌과학자입니다]
 author: soomin
 image: http://image.yes24.com/Goods/70935039/800x0
 ---

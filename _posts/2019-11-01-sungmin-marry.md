@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "21C 춘향은 변사또와 결혼한다."
-date: 2019-12-25 00:00
+date: 2019-11-01 00:00
 tags: [essay]
 author: sungmin
 image: https://i.ytimg.com/vi/hTEGMzKbP-M/maxresdefault.jpg
