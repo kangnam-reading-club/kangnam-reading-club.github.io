@@ -2,9 +2,9 @@
 layout: post
 title: "해마인간"
 author: minjong
-date: 2019-11-16 00:00:00
-tags: [fiction]
-image: 'assets/images/haemaman.jpg'
+date: 2019-11-17 00:00:00
+tags: [story]
+image: '/assets/images/haemamen.jpg'
 ---
 
 > 좌우명 : 해마다 발전하는 사람이되자
