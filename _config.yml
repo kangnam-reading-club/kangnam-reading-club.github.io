@@ -1,8 +1,8 @@
-title: soomin 기술 블로그 
-email: soomtopia@gmail.com
-description: about ruby on rails 
+title:  WWWRITEEE
+email: soomtopia@naver.com
+description: 일요일 8시 글쓰기 모임
 baseurl: ''
-url: 'http://soomtopia.github.io'
+url: 'http://kangnam-reading-study.github.io'
 timezone: Asia/Seoul 
 
 repository: soomtopia/soomtopia.github.io
@@ -30,6 +30,9 @@ collections:
   tags:
     output: true
     permalink: /tags/:path/
+  # books:
+  #   output: true
+  #   permalink: /books/:num/
 
 defaults:
   - scope:
@@ -49,11 +52,11 @@ keep_files: [assets, files]
 github: [metadata]
 # iolo's custom
 author: soomtopia@gmail.com
-image: '/assets/images/default-blog-cover.jpg'
+image: '/assets/images/default_page_cover.jpg'
 asset_url: /assets
 
 github_url:
-  username: soomtopia
+  username: kangnam-reading-club
 
 
   google_analytics:
